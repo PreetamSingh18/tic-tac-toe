@@ -1,38 +1,77 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(22, 27, 32);
+}
+.heading{
+  color: rgb(247, 153, 121);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table{
+  margin: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 50px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.Container h2{
+    color: antiquewhite;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ td{
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: aqua;
+  font-size: 50px;
+}
+.WinnerName{
+  /* background-color: aqua; */
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin:10px;
+}
+.WinnerName h4{
+  width: 50%;
+  font-size: 30px;
+  margin-right: 30px;
+}
+button{
+  width: 20%;
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 130px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.lock{
+  z-index: -100;
+}
+.Inputdata{
+  display: flex;
+  justify-content: center;
+}
+input{
+  width: 30% ;
+  height: 30px;
+  background-color: rgb(255, 218, 144);
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+input::placeholder{
+color: black;
+font-size: 15px;
+font-style: italic;
+}
+.btn1{
+  margin: 0;
+  margin-left: 5px;
+  width: 10%;
 }
