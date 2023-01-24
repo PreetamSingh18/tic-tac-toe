@@ -11,7 +11,7 @@ const App = () => {
     setInputItem(event.target.value);
   };
   const EnterUser = () => {
-    if (InputItem != "") {
+    if (InputItem !== "") {
       setUser(() => {
         return InputItem;
       });
@@ -57,7 +57,7 @@ const App = () => {
 
   const handleClick = (num) => {
     //  alert(num);
-    if(user.length==0){
+    if(user.length===0){
       alert("Enter UserName to Play Game");
       return;
     }
@@ -72,7 +72,7 @@ const App = () => {
     console.log(square);
     let emptyCell = [];
     for (let i = 0; i < 9; i++) {
-      if (square[i] == "") {
+      if (square[i] ==="") {
         emptyCell.push(i);
       }
     }
@@ -81,7 +81,7 @@ const App = () => {
     square[emptyCell[random]] = "O";
     emptyCell = [];
     for (let i = 0; i < 9; i++) {
-      if (square[i] == "") {
+      if (square[i] === "") {
         emptyCell.push(i);
       }
     }
@@ -135,7 +135,7 @@ const App = () => {
         </table>
       </div>
       <div className="WinnerName">
-        {winner==null && Empty==0 &&(
+        {winner===null && Empty===0 &&(
           <>
          <h4>Match Draw , Enter Restart</h4>
           <button
@@ -153,7 +153,7 @@ const App = () => {
 
         {winner && (
           <>
-            <h4>{winner=='X'? "Wow "+user+ " you won" :"oops you lose game, Computer won"} the Game !</h4>
+            <h4>{winner==='X'? "Wow "+user+ " you won" :"oops you lose game, Computer won"} the Game !</h4>
             <button
               onClick={() => {
                 RestartGame();
